@@ -62,11 +62,14 @@
 @import "top-alert";
 
 // extra can be transfer in file
+
+//Added opacity to Less More
 .c-less-more__less {
 	line-height: 2em;
 	height: 2em;
 	overflow: hidden;
 	font-size: 16px;
+    opacity: $Paragraph-opacity;
 	@include bp-xxl {
 		font-size: $font-size-xxl;
 	}
@@ -86,6 +89,7 @@
 	margin-top: -2em;
 	line-height: 2em;
 	font-size: 16px;
+    opacity: $Paragraph-opacity;
 	@include bp-xxl {
 		font-size: $font-size-xxl;
 	}
@@ -105,4 +109,9 @@
 //Biggerfont used for increasing font relative to the parent. 
 .Biggerfont{
     font-size: $base-font-size-big;
+}
+
+//Reducing the opacity for paragraphs
+p {
+    opacity: $Paragraph-opacity !important;
 }

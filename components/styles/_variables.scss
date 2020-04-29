@@ -32,42 +32,6 @@ $light-color: #ffffff;
 $light-color-2: #fdfdfd;
 $border-color: #fab49a;
 
-////#ForHims Theme
-//
-//// Fonts
-//$main-font: "SofiaProWeb", "Helvetica", "Arial", sans-serif;
-//$sub-font: "Helvetica", "Arial", sans-serif;
-
-//// Colors
-//$brand-color-1: #cc835c;//Original Shade
-//$dark-color-1: #d5dade;//Dark Shade
-//$dark-color-2: rgba(0,0,0,0.88);//Light Shade
-//
-//
-////Error colors
-//$error-color: red;
-//$error-color-2: #c30000;
-//
-////Black Shades & color
-//$base-color: #1a1811;
-//$black: #000;
-//
-//// Extra colors
-//$light-color-3: #b47cff;
-//
-//$Hover-color: $brand-color-1;
-
-
-
-///////////////////////////////////////
-//////////////////////////////////////
-/////////////////////////////////////
-////Blue Theme Main Color
-//$brand-color-1: #7c4dff;//Original Shade
-//$dark-color-1: #3f1dcb;//Dark Shade
-//$dark-color-2: #b47cff;//Light Shade
-
-
 //#ORIGINAL THEME
 
 // Fonts
@@ -79,6 +43,25 @@ $brand-color-1: #ff3d00;//Original Shade
 $dark-color-1: #c30000;//Dark Shade
 $dark-color-2: #ff7539;//Light Shade
 
+
+////#ForHims Theme
+//
+//// Fonts
+//$main-font: "SofiaProWeb", "Helvetica", "Arial", sans-serif;
+//$sub-font: "Helvetica", "Arial", sans-serif;
+//
+//// Colors
+//$brand-color-1: #cc835c;//Original Shade
+//$dark-color-1: #d5dade;//Dark Shade
+//$dark-color-2: rgba(0,0,0,0.88);//Light Shade
+
+///////////////////////////////////////
+//////////////////////////////////////
+/////////////////////////////////////
+////Blue Theme Main Color
+//$brand-color-1: #7c4dff;//Original Shade
+//$dark-color-1: #3f1dcb;//Dark Shade
+//$dark-color-2: #b47cff;//Light Shade
 
 ////#Aesop Theme
 //
@@ -101,3 +84,20 @@ $dark-color-2: #ff7539;//Light Shade
 //$brand-color-1: #ff3d00;//Original Shade
 //$dark-color-1: #c30000;//Dark Shade
 //$dark-color-2: #ff7539;//Light Shade
+
+
+
+//Error colors
+$error-color: red;
+$error-color-2: #c30000;
+
+//Black Shades & color
+$base-color: #1a1811;
+$black: #000;
+
+// Extra colors
+$light-color-3: #b47cff;
+
+$Hover-color: $brand-color-1;
+
+$Paragraph-opacity: 0.75;
