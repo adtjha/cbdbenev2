@@ -55,37 +55,56 @@ $dark-color-2: #ff7539;//Light Shade
 //$dark-color-1: #d5dade;//Dark Shade
 //$dark-color-2: rgba(0,0,0,0.88);//Light Shade
 
-///////////////////////////////////////
-//////////////////////////////////////
-/////////////////////////////////////
-////Blue Theme Main Color
-//$brand-color-1: #7c4dff;//Original Shade
-//$dark-color-1: #3f1dcb;//Dark Shade
-//$dark-color-2: #b47cff;//Light Shade
-
 ////#Aesop Theme
-//
-//// Fonts
-//$main-font: "PlayFair Display", serif;
+
+// Fonts
+//$main-font: "Arial";
 //$sub-font: "Montserrat", sans-serif;
 //
 //// Colors
-//$brand-color-1: #ff3d00;//Original Shade
-//$dark-color-1: #c30000;//Dark Shade
-//$dark-color-2: #ff7539;//Light Shade
-//
+//$brand-color-1: #643e43;//Original Shade
+//$dark-color-1: #643e43;//Dark Shade
+//$dark-color-2: #600000;//Light Shade
+
+
 ////#Ritual Theme
-//
+//For this theme to work, changing font color is necessary to match the style. All the above themes have same font color, which is black(0.88).
+
 //// Fonts
 //$main-font: "PlayFair Display", serif;
 //$sub-font: "Montserrat", sans-serif;
 //
 //// Colors
-//$brand-color-1: #ff3d00;//Original Shade
+//$brand-color-1: #ffc107;//Original Shade
 //$dark-color-1: #c30000;//Dark Shade
-//$dark-color-2: #ff7539;//Light Shade
+//$dark-color-2: #142b6f;//Light Shade
+//
+////Only for Ritual theme, for other themes, comment below lines.
+//
+////Error colors
+//$error-color: red;
+//$error-color-2: #c30000;
+//
+////Black Shades & color
+//$base-color: #142b6f;
+//$black: #142b6f;
+//
+//
+//p, h1, h2, h3, h4, h5, h6, a{
+//    color: #142b6f
+//}
+//
+//// Extra colors
+//$light-color-3: #b47cff;
+//
+//$Hover-color: $brand-color-1;
+//
+//$Paragraph-opacity: 0.75;
 
 
+
+//For Ritual comment below lines [IMPORTANT], upto Paragraph opacity. For other themes, Un-comment below lines.
+//
 
 //Error colors
 $error-color: red;
