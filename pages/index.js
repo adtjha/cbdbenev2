@@ -18,8 +18,6 @@ import { Collapse } from "reactstrap";
 import { home as homeData } from "../site-content/index";
 import parse from "html-react-parser";
 import { Carousel } from "react-bootstrap";
-import { adminUrl } from "../constants/projectSettings";
-import Axios from "axios";
 // import Head from 'next/head'
 // import Nav from '../components/nav'
 // import Header from '../components/Header'
@@ -34,32 +32,6 @@ class Home extends React.Component {
 			combos: [],
 			isLrSection: false,
 			isWillness: false,
-			homeData: {
-				banner: {
-					title: "",
-					content: "",
-					btnText: "",
-				},
-				categorySlider: {
-					title: "",
-				},
-				thirdSection: {
-					bigTitle: "",
-					title: "",
-					content: "",
-					btnText: "",
-				},
-				bundlesSlider: {
-					title: "",
-					subTitle: "",
-					btnText: "",
-				},
-				fifthSection: {
-					title: "",
-					content: "",
-					btnText: "",
-				},
-			},
 		};
 	}
 	static getDerivedStateFromProps(nextProps, prevState) {
@@ -79,16 +51,6 @@ class Home extends React.Component {
 	}
 
 	componentDidMount() {
-		console.log("Comp mounted");
-		Axios.get(`${adminUrl}/Home/get`)
-			.then((result) => {
-				console.log("Result got md", result);
-				this.setState({
-					homeData: result.data.data,
-				});
-			})
-			.catch((err) => console.log(err));
-
 		this.props.getProducts();
 		getAllCombos().then((res) => {
 			console.log({
@@ -168,7 +130,7 @@ class Home extends React.Component {
 				content: fifthContent,
 				btnText: fifthBtnText,
 			},
-		} = this.state.homeData;
+		} = homeData;
 
 		return (
 			<Layout
@@ -182,7 +144,7 @@ class Home extends React.Component {
 					<Carousel.Item>
 						<div>
 							<Banner
-								image="/images/Banner-Image-1.jpg"
+								image="/images/bundle_3.jpg"
 								mobileImage="/images/home-banner-mobile.png"
 								versions={["brand-heading"]}
 								// heading={<span><span style={{fontSize: "1.3em"}}>bené</span> fits <br />your life</span>}
@@ -196,7 +158,7 @@ class Home extends React.Component {
 									link="/shop"
 									theme={"outline-brand"}
 								>
-									{bannerBtnText}
+									{parse(bannerBtnText)}
 								</Button>
 							</Banner>
 						</div>
@@ -204,7 +166,7 @@ class Home extends React.Component {
 					<Carousel.Item>
 						<div>
 							<Banner
-								image="/images/Banner-Image-2.png"
+								image="/images/home-banner-1.png"
 								mobileImage="/images/scene_rollon_1-mobile.png"
 								versions={["brand-heading"]}
 								// heading={<span><span style={{fontSize: "1.3em"}}>bené</span> fits <br />your life</span>}
@@ -247,7 +209,7 @@ class Home extends React.Component {
 							}));
 						}}
 						// Link="/"
-						image="/images/bundle.png"
+						image="/images/bundle2.png"
 					>
 						<div className="c-less-more">
 							<div className="c-less-more__less">{parse(thirdContent)}</div>
@@ -288,7 +250,7 @@ class Home extends React.Component {
 						<div className="wellness-wrapper__img">
 							<img
 								className="wellness-wrapper__img--img img-fluid"
-								src="/images/Consult-Image.png"
+								src="/images/consult-image.jpg"
 							/>
 						</div>
 						<div className="wellness-wrapper__desp">
@@ -326,10 +288,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="willness-img">
-								<img
-									className="img-fluid"
-									src="/images/Wellness-Image.png"
-								></img>
+								<img className="img-fluid" src="/images/cbd-wellness.png"></img>
 							</div>
 						</div>
 					</div>
